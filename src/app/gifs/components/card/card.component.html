@@ -1,10 +1,18 @@
 <div class="animate__animated animate__bounceInUp card mb-2 text-center">
   <div class="">
-    <img
+    <!--  <img
     [src]="gif.images!.downsized_medium.url"
     [alt]="gif.title"
     class="card-img-top">
+    -->
+    <shared-loader [loaderItem]="{
+      url: gif.images!.downsized_medium.url,
+      alt: gif.title,
+      height: gif.images!.downsized_medium.height,
+      width: gif.images!.downsized_medium.width
+    }"></shared-loader>
     <p>
+
       {{ gif.title }}
     </p>
     <span>

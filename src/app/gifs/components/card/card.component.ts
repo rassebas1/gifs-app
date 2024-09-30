@@ -1,10 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { Gif, Type } from '../../../shared/interfaces/giphy.interfaces';
+import { SharedModule } from "../../../shared/shared.module";
+import { LoaderComponent } from "../../../shared/components/loader/loader.component";
 
 @Component({
   selector: 'app-card',
-  standalone: true,
-  imports: [],
+  standalone:true,
+  imports:[SharedModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css',
 })
