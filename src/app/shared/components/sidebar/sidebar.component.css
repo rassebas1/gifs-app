@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+.sidebar{
+  height: 100vh;
+}
+button{
+  width: 200px;
+}
